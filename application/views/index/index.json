@@ -1,0 +1,14 @@
+{
+    "pl_header": {
+        "fun": "FM.view",
+        "domid": "pl_header"
+    },
+    "pl_content": {
+        "fun": "FM.view",
+        "domid": "pl_content"
+    },
+    "pl_footer": {
+        "fun": "FM.view",
+        "domid": "pl_footer"
+    }
+}

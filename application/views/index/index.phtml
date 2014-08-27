@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <style>
+        #pl_header {
+            width: 100%;
+            height: 100px;
+            background: greenyellow;
+            overflow: hidden;
+        }
+
+        #pl_content {
+            width: 100%;
+            height: 100px;
+            background: darkgreen;
+            overflow: hidden;
+        }
+
+        #pl_footer {
+            width: 100%;
+            height: 100px;
+            background: darkolivegreen;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="pl_header"></div>
+    <div id="pl_content"></div>
+    <div id="pl_footer"></div>
+    <script type="text/javascript">
+        var FM = (function() {
+            var domid = '';
+            var html  = '';
+            var css   = '';
+            var js    = '';
+            var time  = '';
+
+            return {
+                view: function(data) {
+                    domid = data['domid'];
+                    html  = data['html'];
+                    time  = data['time'];
+
+                    var oPl = document.getElementById(domid);
+                    oPl.innerHTML = html + " Spend " + time + " ms"|| time;
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
